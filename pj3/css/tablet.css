@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+@media screen and (min-width:768px) and (max-width:1119px){
+
+
+  .lnb > .fa-bars{display:block;}
+  .g_wrap > .sns_nav{display:none;}
+
+  .product, .h_inner, .f_inner, .f_inner > p, .b_wrap, .b_inner, .instagram{
+    width:620px;
+  }
+
+  /*헤더 서식*/
+  .h_wrap{
+    position:relative;
+  }
+  .h_inner{
+    display:block;
+    height:122px;
+  }
+  .h_inner h1{
+    width:fit-content;
+    margin:0 auto;
+  }
+  .gnb{
+    width:100%;
+    margin:0 auto;
+  }
+  .lnb{
+    position:absolute;
+    bottom:12px; right:10px;
+  }
+  .f_inner{margin-bottom:0;}
+
+  .swiper-slide a::before{
+    width:100%; height:50%;
+    background:linear-gradient(0deg, rgba(221,214,222,1) 0%,rgba(221,214,222,1) 50%, rgba(255,255,255,0) 100%);
+    top:350px;
+  }
+  .b_text{
+    font-size:1.75em;
+    top:80%;
+  }
+  .swiper-slide > a{
+    width:100%;
+  }
+  .swiper-slide > a > img{
+    position:absolute;
+    transform:translate(0,-20%);
+    width:100%;
+  }
+  
+
+  /*브랜드스토리 서식*/
+  .story{
+    background-position-y:75%;
+    background-size:170%;
+  }
+  .story_wrap > p{
+    font-size:1.1em;
+  }
+  .story_wrap > p > br{
+    display:block;
+  }
+
+  /*베스트 서식*/
+  .b_wrap{
+    margin:0 auto;
+    position:relative;
+  }
+  .b_inner{
+    overflow:hidden;
+  }
+  .best .b_wrap .fas{
+    display:block;
+  }
+  .b_list{
+    position:relative;
+    left:0px;
+  }
+
+  /*인스타그램 서식*/
+  .instagram h2{
+    margin-bottom:60px;
+  }
+  .instagram{
+    overflow:hidden;
+  }
+  .instagram > .gallery{
+  grid-template-columns:repeat(9,200px);
+  grid-template-rows:repeat(1,200px);
+  }
+  .instagram .ctrl_btn{
+    display:flex;
+  }
+  .instagram > .gallery > li{transform:scale(0.9);}
+  .instagram > .gallery > li:first-child{order:2;}
+  .instagram > .gallery > li:nth-child(2){order:3;}
+  .instagram > .gallery > li:nth-child(3){order:4;}
+  .instagram > .gallery > li:nth-child(4){order:5;}
+  .instagram > .gallery > li:nth-child(5){order:6;}
+  .instagram > .gallery > li:nth-child(6){order:7;}
+  .instagram > .gallery > li:nth-child(7){order:8;}
+  .instagram > .gallery > li:nth-child(8){order:9;}
+  .instagram > .gallery > li:last-child{order:1;}
+  .on_g{z-index:1; transform: scale(1.2) !important;}
+  .instagram .ctrl_btn{margin-top:60px;}
+}

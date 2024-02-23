@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+main{ /*ㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎㅎㅎ*/
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.fas{
+    font-size: 2rem;
+}
+/* step1박스 */
+.step-box{ /*ㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎ*/
+    display: flex;
+    line-height: 23px;
+    margin-left: 5%;
+    margin-top: 73px;
+    margin-bottom: 87px;
+}
+.tit_step{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-right: 5%;
+    margin-top: 4px;
+}
+.title{
+    font-size: 0.75rem;
+}
+.step{
+    display: block;
+    width: 91px; height: 23px;
+    background-image: url('../img/sprite_login_join.png');
+    background-position: -276px -227px;
+    margin-left: 6px;
+}
+
+/* agree-box */
+.agree-box{margin-left: 5.6%;}
+h2{font-size: 2.5rem; font-weight: normal;}
+/* agree1 */
+.join_agree1box{margin-top: 64px;}
+input[id="check01"] + label{
+	width: 138px; height: 26px;
+    background-position: -2px -111px;
+}
+input[id="check01"]:checked + label{
+    background-position: -2px -137px;  
+}
+/* agree2 */
+input[id="check02"] + label{
+	width: 259px; height: 26px;
+    background-position: -145px -111px;
+}
+input[id="check02"]:checked + label{
+    background-position: -145px -137px; 
+}
+/* agree3 */
+input[id="check03"] + label{
+	width: 206px; height: 26px;
+    background-position: -2px -168px;
+}
+input[id="check03"]:checked + label{
+    background-position: -2px -196px; 
+}
+/* agree4 */
+.join_agree4box{
+    margin-left: 22px;
+    margin-bottom: 17px;
+}
+input[id="check04"] + label{
+    width: 225px; height: 26px;
+    background-position: -213px -168px;
+}
+input[id="check04"]:checked + label{
+    background-position: -213px -196px;
+}
+hr{
+    width: 86.5%; height: 2px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* agree5 */
+.join_agree5box{
+    margin-left: 22px;
+    margin-top: 17px;
+    margin-bottom: 162px;
+}
+input[id="check05"] + label{
+    width: 269px; height: 41px;
+    background-position: -2px -227px;
+}
+input[id="check05"]:checked + label{
+    background-position: -2px -270px;
+}
+/* agree1~5공통서식 */
+h3{display: none;}
+.join_agree1box, .join_agree2box, .join_agree3box{
+    margin-left: 22px;
+    margin-bottom: 33px;
+}
+input[id="check01"] + label, input[id="check02"] + label, input[id="check03"] + label, input[id="check04"] + label, input[id="check05"] + label{
+	display: inline-block;
+    background-image: url('../img/sprite_login_join.png');
+    box-sizing: border-box;
+	cursor: pointer;
+}
+input[id="check01"]:checked + label, input[id="check02"]:checked + label, input[id="check03"]:checked + label, input[id="check04"]:checked + label, input[id="check05"]:checked + label{
+    background-image: url('../img/sprite_login_join.png');
+}
+input[id="check01"], input[id="check02"], input[id="check03"], input[id="check04"], input[id="check05"]{display: none;}
+label[for=check01] span, label[for=check02] span, label[for=check03] span, label[for=check04] span, label[for=check05] span{display: none;}
+.agreement_body{
+    width: 82.6%; height: 80px;
+    border: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    margin-left: 32px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.agreement_contentbox{
+    height: 80px;
+    padding: 5px 15px 0px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* 다음페이지 버튼*/ /*ㅎㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎㅎㅎ*/
+.next_btn{
+    display: block;
+    width: 100%; height: 70px;
+    border: 1px solid #67BE7A;
+    background-color: #67BE7A;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.25rem;
+    position: fixed; bottom: 0px;
+}

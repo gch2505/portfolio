@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* 배경이미지 */
+body{
+    background-size: 100%;
+    background-image: url('../img/intro.png');
+}
+main{ /* 공통서식 */
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* 로고타이틀 박스 */
+.logo-box{
+    width: 100%; height: 167px;
+    text-align: center;
+    padding-top: 121px;
+    padding-bottom: 167px;
+}
+h1{
+    width: 109px; height: 104px;
+    background-image: url('../img/sprite_login_join.png');
+    background-position: -2px -2px;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    text-indent: -9999px;
+}
+h2{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3cap;
+    padding-top: 44px;
+}
+
+/* 로그인 박스 */
+.login-box{
+    width: 100%; height: 214px;
+}
+.login_input{
+    text-align: center;
+}
+.idtext, .pwtext, .login_btn{
+    width: 86.5%; height: 54px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+.idtext, .pwtext{
+    border: 1px solid rgba(255,255,255,.8);
+    background: rgba(255,255,255,.8);
+    padding-left:  25px;
+}
+.login_btn{
+    display: block;
+    border: 1px solid #67BE7A;
+    background: #67BE7A;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 52px;
+    margin-bottom: 12px;
+}
+.login_more{
+    width: 86.5%;
+    margin: 0px auto;
+    position: relative;
+}
+.login_more > a{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color:#fff;
+}
+.login_more > a:last-child{position: absolute; bottom: 0px; right: 0px;}
+
+/* sns로그인 박스 */
+.snslogin-box{
+    width: 100%;
+    color: #fff;
+    margin-top: 35px;
+    text-align: center;
+}
+.snslogo{
+    width: 279px; height: 67px;
+    display: flex;
+    margin: 0px auto;
+    margin-top: 26px;
+    justify-content: space-between;
+}
+.login_n, .login_k, .login_g{
+    display: block;
+    width: 65px; height: 65px;
+    background-image: url('../img/sprite_login_join.png');
+}
+.login_n{
+    background-position: -2px -316px;
+}
+.login_k{
+    background-position: -69px -316px;
+}
+.login_g{
+    background-position: -136px -316px;
+}
+

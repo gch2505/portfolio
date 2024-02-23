@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px){
+
+  
+  .h_wrap{
+  }
+  .h_inner{
+    width:100%;
+  }
+  .h_inner h1{
+    width:fit-content;
+    margin:0 auto;
+    z-index:9999;
+  }
+
+  .g_wrap{
+    width:100%; height:100%;
+    position:fixed;
+    top:0; left:0;
+    background:rgba(0,0,0,.7);
+    z-index:9999;
+    display:none;
+  }
+  .g_wrap > .fas{
+    color:#fff;
+    font-size:36px;
+    padding:12px;
+    position:fixed;
+    top:2%; left:4%;
+  }
+  .gnb{
+    /*display:none;*/
+    display:block;
+    position:absolute;
+    width:80%; height:100%;
+    background:#752329;
+    margin:0;
+    right:0;
+  }
+  .gnb > ul{
+    display:block;
+    text-align:left;
+    text-indent:20px;
+    margin:100px auto 0;
+    width:80%;
+  }
+  .gnb > ul > li{
+    border-bottom:1px solid #fff;
+    position:relative;
+    overflow:hidden;
+    height:60px;
+  }
+  .gnb > ul > li > a{
+    display:block;
+    width:100%;
+  }
+  .gnb li .fas{
+    display:block;
+    color:#fff;
+    font-size:20px;
+    line-height:60px;
+    padding-right:20px;
+    position:absolute;
+    top:0; right:0;
+  }
+  .gnb .sub{
+    display:block;
+    position:static;
+    transform:none;
+    margin:0 0 20px 0;
+  }
+  .gnb .sub li{
+    text-indent:20px;
+  }
+  .gnb li:nth-child(2) .sub{
+    transform:none;
+  }
+  .sub a{
+    color:#fff;
+    display:block;
+  }
+  .gnb .sns_nav{
+    position:absolute;
+    bottom:30px; left:50px;
+  }
+
+
+  .lnb{
+    margin:0 5%; padding:0;
+    width:90%;
+    display:flex;
+    position:absolute;
+    top:8px;
+    justify-content: space-between;
+  }
+  .lnb > .fa-bars{
+    display:block;
+    margin:0;
+  }
+  .lnb .fas{
+    padding:10px;
+  }
+
+
+
+  .f_wrap{display:flex;}
+  .f_inner{
+    height:100%;
+    padding-bottom:30px;
+  }
+  .f_inner, .f_inner > p{
+    width:90%;
+    margin:20px auto;
+  }
+  .f_inner .ftc_btn{margin-left:20px;}
+
+  .f_inner > h2{
+  margin-bottom:25px;
+  text-align:center;
+  }
+  .f_inner > .sns_nav{
+    display:flex;
+    justify-content:center;
+    position:static;
+    margin-bottom:25px;
+  }
+  .sns_nav > a:first-child{margin-left:0;}
+  .fnb > ul{justify-content:center;}
+  .f_inner > p:last-child{text-align: center;}
+
+
+  .swiper-slide a::before{
+    width:100%; height:50%;
+    background:linear-gradient(0deg, rgba(221,214,222,1) 0%,rgba(221,214,222,1) 50%, rgba(255,255,255,0) 100%);
+    top:350px;
+  }
+  .b_text{
+    top:80%;
+    font-size:24px;
+  }
+  .b_text br{
+    display:block !important;
+  }
+  .swiper-slide > a{
+    width:100%;
+    overflow:hidden;
+  }
+  .swiper-slide > a > img{
+    position:static;
+    width:100%;
+    transform:scale(1.5);
+  }
+
+  .swiper-wrapper > .fa-chevron-left{
+    left:10%;
+  }
+  .swiper-wrapper > .fa-chevron-right{
+    right:10%;
+  }
+
+
+  .story{
+    background-size:300%;
+  }
+
+  .product{
+    width:91.6%;
+  }
+  .product > ul > li > h3{
+    margin:30px 0;
+  }
+  .product > ul > li > p{
+    text-align:left;
+  }
+  .product > ul > li > a{
+    margin:40px 0 30px;
+  }
+  
+
+  .best{overflow:hidden;}
+  .best .b_wrap{
+    position:relative;
+    margin:0 30px;
+  }
+  .best .b_wrap .fas{
+    display:block;
+  }
+  .best .b_wrap .fa-chevron-left{
+    left:-30px;
+  }
+  .best .b_wrap .fa-chevron-right{
+    right:-30px;
+  }
+
+  .b_inner{
+    overflow:hidden;
+    width:100%;
+  }
+
+
+
+  /*인스타그램 서식*/
+  .instagram h2{
+    margin-bottom:60px;
+  }
+  .instagram{
+    overflow:hidden;
+    width:620px;
+  }
+  .instagram > .gallery{
+  grid-template-columns:repeat(9,200px);
+  grid-template-rows:repeat(1,200px);
+  }
+  .instagram .ctrl_btn{
+    display:flex;
+  }
+  .instagram > .gallery > li{transform:scale(0.9);}
+  .instagram > .gallery > li:first-child{order:2;}
+  .instagram > .gallery > li:nth-child(2){order:3;}
+  .instagram > .gallery > li:nth-child(3){order:4;}
+  .instagram > .gallery > li:nth-child(4){order:5;}
+  .instagram > .gallery > li:nth-child(5){order:6;}
+  .instagram > .gallery > li:nth-child(6){order:7;}
+  .instagram > .gallery > li:nth-child(7){order:8;}
+  .instagram > .gallery > li:nth-child(8){order:9;}
+  .instagram > .gallery > li:last-child{order:1;}
+  .on_g{z-index:1; transform: scale(1.2) !important;}
+  .instagram .ctrl_btn{margin-top:60px;}
+
+  @media screen and (max-width:640px){
+    
+  .instagram{
+    width:320px;
+  }
+  .instagram > .gallery{
+    grid-template-columns:repeat(9,150px);
+    grid-template-rows:repeat(1,150px);
+    transform:translateX(-75px);
+  }
+  .on_g{z-index:1; transform: scale(1.3) !important;}
+
+  }
+
+}

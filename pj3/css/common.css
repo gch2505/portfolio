@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family:'Noto Sans KR', sans-serif, Arial;
+}
+
+a{
+  color:#333;
+  text-decoration:none;
+}
+header, footer{width:100%}
+
+
+h2{
+  color:#333;
+  font-size:32px;
+  font-weight:500;
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/*헤더 서식*/
+.h_wrap{
+  width:100%;
+  background:#752329;
+  z-index:9998;
+}
+.h_inner{
+  width:90%;
+  height:60px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+}
+.h_inner h1{
+  padding:15px;
+}
+.gnb{
+  width:700px;
+  line-height:60px;
+  margin-right:150px;
+}
+.gnb > ul{
+  text-align:center;
+  display:flex;
+  justify-content:space-around;
+  position:relative;
+  z-index:9000;
+}
+.gnb > ul > li > a{
+  font-size:16px;
+  font-weight:500;
+  color:#fff;
+}
+.gnb > ul > li span{
+  display:none;
+}
+.gnb .sub{
+  margin-top:10px;
+  line-height:30px;
+  position:absolute;
+  display:none;
+  transform:translateX(-10px);
+  font-size:14px;
+}
+.gnb li:nth-child(2) .sub{
+  transform:translateX(-25px);
+
+}
+.sub a{
+  color:#333;
+}
+.sub a:hover{
+  font-weight:500;
+  text-decoration:underline;
+  color:#752329;
+}
+.lnb{
+  padding:7px;
+  display:flex;
+}
+.lnb > .fa-bars{
+  margin-left:15px;
+}
+.lnb .fas{
+  color:#fff;
+  font-size:24px;
+  line-height:24px;
+  padding-top:10px;
+}
+
+.g_box{
+  background:rgba(255,255,255,.7);
+  height:170px;
+  width:100%;
+  position:absolute;
+  z-index:8000;
+  display:none;
+}
+.gnb .sns_nav, .g_wrap > .fas{display:none;}
+
+
+/*푸터 서식*/
+.f_wrap{
+  background:#752329;
+  position:relative;
+}
+.f_inner{
+  width:90%; height:270px;
+  margin:0 auto;
+  position:relative;
+}
+.f_inner > h2{
+  text-align:left;
+  padding-top:35px;
+  margin-bottom:40px;
+}
+.f_inner > .sns_nav{
+  position:absolute;
+  top:35px; right:0;
+}
+.sns_nav a{
+  color:#fff;
+  display:inline-block;
+  font-size:24px;
+  width:48px; height:48px;
+  background:#EB7C7C;
+  text-align:center;
+  line-height:48px;
+  border-radius:50%;
+  margin-left:15px;
+}
+.fnb > ul{
+  display:flex;
+}
+.fnb > ul > li{
+  padding-right:10px;
+  position:relative;
+}
+.fnb > ul > li::after{
+  display:block;
+  content:"";
+  width:1px;
+  height:18px;
+  background:#fff;
+  position:absolute;
+  top:0;right:4px;
+}
+.fnb > ul > li:last-child::after{
+  display:none;
+}
+.fnb > ul > li > a{
+  color:#fff;
+  font-size:14px;
+}
+.f_inner > p{
+  width:670px;
+  margin:20px 0 10px;
+  color:#fff;
+  font-size:14px;
+  line-height:20px;
+}
+.f_inner .ftc_btn{
+  color:#fff;
+  font-size:12px;
+  background:#EB7C7C;
+  padding:2px 5px;
+}
+
+/*버튼 공통서식*/
+.btn01{
+  background:#EB7C7C;
+  width:130px;
+  color:#fff;
+  text-align:center;
+  font-weight:400;
+  line-height:16px;
+  font-size:1em;
+  display:block;
+  padding:12px 0;
+}
+.btn01:hover{
+  background:#CF6161;
+}
+.btn01:active{
+  background:#B12F2F;
+}
+
+/*top버튼 공통서식*/
+#top_btn{
+  display:block;
+  position:fixed;
+  bottom:15px; right:15px;
+  background:#EB7C7C;
+  width:60px; height:60px;
+  line-height:70px;
+  text-align:center;
+  color:#fff;
+  border-radius:50%;
+  z-index:9998;
+}
+#top_btn .fas{
+  display:block;
+  position:absolute;
+  top:10px;left:50%;
+  transform:translateX(-50%);
+}
+.btn_s{
+  position:absolute !important;
+  top:-75px;
+}

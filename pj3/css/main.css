@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+.lnb > .fa-bars{display:none;}
+.product, .best, .instagram{margin:80px auto;}
+
+.g_wrap > .sns_nav{display:none;}
+
+.main_slide{
+  width:100%;
+}
+.main_slide > h2{
+  display:none;
+}
+.swiper-wrapper{
+  height:700px;
+  position:relative;
+  background:#ccc;
+}
+.swiper-slide{
+  width:100%;
+  height:700px;
+  position:absolute;
+  overflow:hidden;
+}
+.swiper-slide a::before{
+  width:70%; height:700px;
+  display:block;
+  content:"";
+  background:linear-gradient(90deg, rgba(221,214,222,1) 0%,rgba(221,214,222,1) 90%, rgba(255,255,255,0) 100%);
+  position:absolute;
+  top:0;
+  z-index:3;
+}
+.b_text{
+  position:absolute;
+  top:50%; left:20%;
+  font-size:2em;
+  transform:translateY(-50%);
+  color:#333;
+  line-height:2.81rem;
+}
+.swiper-slide > .b_text > br:not(:nth-child(2)){display:none;}
+@media screen and (min-width:1200px) and (max-width:1300px){
+  .slide1 > .b_text > br:last-child{
+    display:block;
+  }
+}
+.slide1, .slide1 > .b_text{z-index:10;}
+.slide2, .slide2 > .b_text{z-index:9;}
+.slide3, .slide3 > .b_text{z-index:8;}
+.swiper-slide > a > img{
+  transform:translate(12%,-35%);
+  position:absolute;
+  right:0;
+}
+
+/*좌,우 버튼 서식*/
+.swiper-wrapper > .fas{
+  font-size:40px;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:20;
+}
+.swiper-wrapper > .fa-chevron-left{
+  left:15%;
+}
+.swiper-wrapper > .fa-chevron-right{
+  right:15%;
+}
+
+/*슬라이드 컨트롤버튼 서식*/
+.swiper-wrapper .ctrl_btn{
+  position:absolute;
+  bottom:3%;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:20;
+  display:flex;
+}
+.ctrl_btn > li{
+  width:16px; height:16px;
+  background:#bbb;
+  border-radius:50%;
+  margin-right:10px;
+}
+.ctrl_btn > li:last-child{
+  margin-right:0;
+}
+.on{background:#752329 !important;}
+
+
+/*브랜드스토리 서식*/
+.story{
+  width:100%;
+  height:700px;
+  text-align:center;
+  background-color:#000;
+  background-image:url(../images/brandstory1.jpg);
+  background-size:130%;
+  background-attachment:fixed;
+  position:relative;
+  margin-top:0;
+}
+.story:before{
+  width:100%; height:100%;
+  content:"";
+  background-color:rgba(0,0,0,.4);
+  position:absolute;
+  top:0; left:0;
+}
+.story > h2, .story_wrap, .story > .more_btn{
+  position:absolute;
+}
+.story h2{
+  color:#fff;
+  font-size:2em;
+  top:100px;
+  left:50%;
+  transform:translateX(-50%);
+  font-weight:500;
+}
+.story_wrap{
+  color:#fff;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+}
+.story_wrap > p{
+  font-size:1.25em;
+  margin-bottom:50px;
+  font-weight:400;
+  line-height:28px;
+}
+.story_wrap > p > br{
+  display:none;
+}
+.story .more_btn{
+  bottom:100px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/*제품 서식*/
+.product{
+  width:1060px;
+}
+.product > ul{
+  display:flex;
+  flex-wrap:wrap;
+}
+.product > ul > li{
+  margin:0 auto;
+  width:250px;
+  display:flex;
+  flex-wrap:wrap;
+}
+.product > ul > li > h3{
+  height:24px;
+  display:block;
+  font-size:24px;
+  margin:30px auto;
+  order:2;
+}
+.product > ul > li > img{
+  display:block;
+  width:100%;
+  height:250px;
+  object-fit: cover;
+  order:1;
+}
+.product > ul > li > p{
+  order:3;
+  line-height:24px;
+}
+.product > ul > li > a{
+  background:#EB7C7C;
+  order:4;
+  margin:40px auto 30px;
+}
+
+/*베스트 서식*/
+.best{
+  width:100%;
+  margin:0;
+  padding:50px 0;
+  background:rgba(235,124,124,.2);
+}
+.best .b_wrap .fas{
+  display:none;
+  padding:5px 12px;
+  font-size:36px;
+  color:#752329;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+.best .b_wrap .fa-chevron-left{
+  left:-50px;
+}
+.best .b_wrap .fa-chevron-right{
+  right:-50px;
+}
+.b_list{
+  width:1060px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+}
+.b_list > li{
+  width:250px;
+}
+.b_list > li > a{
+  display:flex;
+  flex-wrap:wrap;
+}
+.b_list > li div{
+  width:250px; height:250px;
+  order:1;
+  overflow:hidden;
+}
+.b_list > li h3{
+  font-size:20px;
+  order:2;
+  margin:20px 0;
+  height:40px;
+  line-height:24px;
+}
+.b_list > li img{
+  width:100%;
+  transition:.3s;
+}
+.b_list > li:hover img{
+  transform: scale(1.05);
+}
+.b_list > li span{
+  line-height:24px;
+  order:3;
+}
+.btn01{
+  margin:30px auto 0;
+}
+
+/*인스타그램 서식*/
+.instagram{
+  width:720px;
+  margin-top:120px;
+}
+.instagram > ul{
+  width:100%;
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns:repeat(3,240px);
+  grid-template-rows:repeat(3,240px);
+}
+
+.instagram > ul > li{
+  overflow:hidden;
+}
+
+.instagram > ul > li img{
+  width:100%;
+  height:240px;
+  object-fit: cover;
+  transition:.3s;
+}
+
+.instagram > ul > li:hover img{
+  transform:scale(1.05);
+  filter:brightness(1.1);
+}
+
+/*인스타그램 컨트롤버튼 서식*/
+.instagram .ctrl_btn{
+  display:none;
+  justify-content:center;
+  margin-top:40px;
+  grid-gap:0;
+}
+.instagram .ctrl_btn > li{
+  margin-left:8px;
+}.instagram .ctrl_btn > li:first-child{
+  margin-left:0;
+}

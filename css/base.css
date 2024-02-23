@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: "SOYOMapleBoldTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Pretendard Variable", Pretendard, "Noto Sans KR", arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+}
+
+a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.close{
+    position: absolute;
+    font-size: 2rem;
+    left: 12%;
+    top: 16px;
+  }
+  
+  .gnb{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100,100,100,0.8);
+    top: 0px;
+    left: 100%;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  .gnb > ul{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+  }
+  .gnb > ul > li:first-child {
+    text-align: center;
+  }
+  .gnb > ul > li:first-child a{
+    display: inline;
+  }
+  i.fas.fa-circle-user{
+    font-size: 120px;
+  }
+  .gnb > ul > li{
+    text-indent: 5%;
+    line-height: 25px;
+    padding-top: 30px;
+  }
+  .gnb > ul > li > a{
+    font-size: 17px;
+    display: block;
+  }
+  .gnb > ul > li > a > i{
+    color: #67BE7A;
+    font-size: 22px;
+  }
+  #toggle{
+    display: none;
+  }
+  #toggle:checked ~ .gnb{
+    left: 0px;
+  }
+  i.fa-circle-user{
+    font-size: 100px;
+  }
+  i.fa-close{
+    color: #fff;
+  }
+  i.fa-location-dot{
+    padding-right: 5%;
+  }
+  i.fa-music{
+    padding-right: 5%;
+  }
+  i.fa-gear{
+    padding-right: 5%;
+  }
+  i.fa-scroll{
+    padding-right: 5%;
+  }
+  i.fa-rectangle-list{
+    padding-right: 5%;
+  }

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>더툴랩</title>
+  <!--1. 여백초기화-->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!--2. 공통서식(메인, 서브, 로그인, 회원가입)-->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!--3. 레이아웃서식
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">-->
+  <!--4. 메인서식-->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!--5. 태블릿 서식-->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+  <!--6. 모바일 서식-->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+  <!--아이콘폰트 주소-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!--제이쿼리 라이브러리-->
+  <script src="./script/jquery-3.7.1.js"></script>
+  <script src="./script/main.js" defer></script>
+</head>
+<body>
+  <!--헤더영역 시작-->
+  <header>
+    <div class="h_wrap">
+      <div class="h_inner">
+        <h1>
+          <a href="index.html" title="메인페이지로 이동하기">
+            <img src="./images/logo_f.png" alt="헤더 로고 이미지">
+          </a>
+        </h1>
+
+        <div class="g_wrap">
+        <nav class="gnb">
+          <ul>
+            <li>
+              <a href="#" title="회사소개">회사소개</a><span class="fas fa-chevron-down"></span>
+              <ul class="sub">
+                <li><a href="#" title="브랜드 스토리">브랜드 스토리</a></li>
+                <li><a href="#" title="퀄리티">퀄리티</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="제품">제품</a><span class="fas fa-chevron-down"></span>
+              <ul class="sub">
+                <li><a href="#" title="브러쉬">브러쉬</a></li>
+                <li><a href="#" title="퍼프&스펀지">퍼프&스펀지</a></li>
+                <li><a href="#" title="브러쉬 케어">브러쉬 케어</a></li>
+                <li><a href="#" title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="베스트">베스트</a><span class="fas fa-chevron-down"></span>
+              <ul class="sub">
+                <li><a href="#" title="브러쉬">브러쉬</a></li>
+                <li><a href="#" title="퍼프&스펀지">퍼프&스펀지</a></li>
+                <li><a href="#" title="브러쉬 케어">브러쉬 케어</a></li>
+                <li><a href="#" title="기타">기타</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" title="오프라인 매장">오프라인 매장</a>
+            </li>
+            <li>
+              <a href="#" title="상품후기">상품후기</a>
+            </li>
+            <li>
+              <a href="#" title="매거진">매거진</a>
+            </li>
+          </ul>
+          <div class="sns_nav">
+            <a href="#" title="더툴랩 인스타그램 페이지 바로가기"><span class="fab fa-instagram"></span></a>
+            <a href="#" title="더툴랩 페이스북 페이지 바로가기"><span class="fab fa-facebook-f"></span></a>
+            <a href="#" title="더툴랩 네이버 블로그 페이지 바로가기"><span class="fa-sharp fas fa-n"></span></a>
+          </div>
+        </nav>
+        <span class="fas fa-close"></span>
+        </div>
+
+        <nav class="lnb">
+          <a href="search" title="검색페이지로 이동하기">
+            <span class="fas fa-search"></span>
+          </a>
+          <span class="fas fa-bars"></span>
+        </nav>
+
+      </div>
+      <div class="g_box"></div>
+    </div>
+  </header>
+
+  <!--메인콘텐츠 시작-->
+  <main>
+    <article class="main_slide">
+      <h2>메인슬라이드</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1">
+            <span class="b_text">소중한 브러쉬 <br>더 오래, 새것처럼<br>
+              ‘툴리스트가 알려주는 <br>브러쉬 세척의 모든 것’</span>
+            <a href="#" title="툴리스트가 알려주는 브러쉬 세척의 모든 것">
+              <img src="./images/benner_s_1.jpg" alt="슬라이드 이미지1">
+            </a>
+          </div>
+          <div class="swiper-slide slide2">
+            <span class="b_text">메이크업, <br>이것만 있으면 뚝딱!<br>
+              풀메이크업을 위한 <br>브러쉬 세트 출시</span>
+            <a href="#" title="풀메이크업을 위한 브러쉬 세트 출시">
+              <img src="./images/benner_s_2.jpg" alt="슬라이드 이미지2">
+            </a>
+          </div>
+          <div class="swiper-slide slide3">
+            <span class="b_text">메이크업 아티스트들의 <br>필수템<br>
+              포인트 섀도우와 <br>아이라인 표현을 동시에</span>
+            <a href="#" title="포인트 섀도우와 아이라인 표현을 동시에">
+              <img src="./images/benner_s_3.jpg" alt="슬라이드 이미지3">
+            </a>
+          </div>
+          <span class="fas fa-chevron-left"></span>
+          <span class="fas fa-chevron-right"></span>
+          <ul class="ctrl_btn">
+            <li class="on">&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+          </ul>
+        </div>
+    </article>
+
+    <article class="story">
+      <h2>브랜드 스토리</h2>
+      <div class="story_wrap">
+      <p>도구를 연구하는 THE TOOL LAB의 TOOLIST들은</p>
+      <p>꼭 필요한, 완성도 높은 어플리케이터만을 제작합니다.</p>
+      <p>“검증된 제품력의 차이를 <br>직접 눈으로, 터치로 확인하세요.”</p>
+      </div>
+      <a href="#" title="브랜드 스토리 페이지로 바로가기" class="more_btn btn01">자세히 보기</a>
+    </article>
+
+    <article class="product">
+      <h2>제품</h2>
+      <ul>
+        <li>
+          <h3>브러쉬</h3>
+          <img src="./images/product1.jpg" alt="브러쉬">
+          <p>홍조, 잡티 커버부터 색조 화장까지. 더툴랩이 자랑하는 다양한 브러쉬를 만나보세요.</p>
+          <a href="#" title="브러쉬 제품 페이지로 바로가기" class="more_btn btn01">바로가기</a>
+        </li>
+        <li>
+          <h3>퍼프&스펀지</h3>
+          <img src="./images/product2.jpg" alt="퍼프&스펀지">
+          <p>갈라지는 베이스를 꾸욱 눌러주는 쿠션 퍼프&스펀지로 들뜸없는 촉촉한 피부 표현</p>
+          <a href="#" title="퍼프&스펀지 제품 페이지로 바로가기" class="more_btn btn01">바로가기</a>
+        </li>
+        <li>
+          <h3>브러쉬 케어</h3>
+          <img src="./images/product3.jpg" alt="브러쉬 케어">
+          <p>매일 피부에 닿는 브러쉬 깔끔하게 세척해 새 것처럼 말끔하게 사용해 보세요.</p>
+          <a href="#" title="브러쉬 케어 제품 페이지로 바로가기" class="more_btn btn01">바로가기</a>
+        </li>
+        <li>
+          <h3>기타</h3>
+          <img src="./images/product4.jpg" alt="기타">
+          <p>브러쉬나 퍼프 이외의 다양한 제품들을 더툴랩에서 만나보세요.<br>&nbsp;</p>
+          <a href="#" title="기타 제품 페이지로 바로가기" class="more_btn btn01">바로가기</a>
+        </li>
+      </ul>
+    </article>
+
+    <article class="best">
+      <h2>베스트</h2>
+      <div class="b_wrap">
+        <div class="b_inner">
+          <ul class="b_list">
+            <li>
+              <a href="#" title="상품1 상세페이지로 바로가기">
+                <h3>해피림 프로페셔널 풀페이스 키트 모음 (12종 택1)</h3>
+                <div>
+                  <img src="./images/best1.jpg" alt="베스트상품 이미지1">
+                </div>
+                <span>해피림 아티스트가 선정한 실용적인 풀메이크업 키트</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="상품2 상세페이지로 바로가기">
+                <h3>롱래스팅 텐션 퍼프 듀오</h3>
+                <div>
+                  <img src="./images/best2.jpg" alt="베스트상품 이미지2">
+                </div>
+                <span>남다른 텐션감과 매끈한 질감의 촉촉 텐션 퍼프</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="상품3 상세페이지로 바로가기">
+                <h3>101 멀티태스커 3종</h3>
+                <div>
+                  <img src="./images/best3.jpg" alt="베스트상품 이미지3">
+                </div>
+                <span>24시간 지속되는 완벽 밀착 베이스 완성</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="상품4 상세페이지로 바로가기">
+                <h3>초밀착 커버 듀오</h3>
+                <div>
+                  <img src="./images/best4.jpg" alt="베스트상품 이미지4">
+                </div>
+                <span>베이스의 사각지대를 커버하는 브러쉬와 얇고 고른 밀착 커버를 위한 퍼프</span>
+              </a>
+            </li>
+          </ul>
+        <span class="fas fa-chevron-left"></span>
+        <span class="fas fa-chevron-right"></span>
+        </div>
+      </div>
+      <a href="#" title="베스트 제품 페이지 바로가기" class="btn01">더보기</a>
+    </article>
+    
+    <article class="instagram">
+      <h2>인스타그램</h2>
+      <ul class="gallery">
+        <li class="on_g">
+          <a href="#" title="인스타그램1 페이지 바로가기">
+            <img src="./images/instar01.jpg" alt="인스타그램 이미지1">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램2 페이지 바로가기">
+            <img src="./images/instar02.jpg" alt="인스타그램 이미지2">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램3 페이지 바로가기">
+            <img src="./images/instar03.jpg" alt="인스타그램 이미지3">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램4 페이지 바로가기">
+            <img src="./images/instar04.jpg" alt="인스타그램 이미지4">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램5 페이지 바로가기">
+            <img src="./images/instar05.jpg" alt="인스타그램 이미지5">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램6 페이지 바로가기">
+            <img src="./images/instar06.jpg" alt="인스타그램 이미지6">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램7 페이지 바로가기">
+            <img src="./images/instar07.jpg" alt="인스타그램 이미지7">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램8 페이지 바로가기">
+            <img src="./images/instar08.jpg" alt="인스타그램 이미지8">
+          </a>
+        </li>
+        <li>
+          <a href="#" title="인스타그램9 페이지 바로가기">
+            <img src="./images/instar09.jpg" alt="인스타그램 이미지9">
+          </a>
+        </li>
+      </ul>
+      <ul class="ctrl_btn">
+        <li class="on">&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+        <li>&nbsp;</li>
+      </ul>
+    </article>
+  </main>
+
+  <!--푸터영역 시작-->
+  <footer>
+    <div class="f_wrap">
+      <a href="#" title="top버튼" id="top_btn"><span class="fas fa-chevron-up"></span>TOP</a>
+      <div class="f_inner">
+        <h2><img src="./images/logo_f.png" alt="푸터 로고 이미지"></h2>
+        <nav class="sns_nav">
+          <a href="#" title="더툴랩 인스타그램 페이지 바로가기"><span class="fab fa-instagram"></span></a>
+          <a href="#" title="더툴랩 페이스북 페이지 바로가기"><span class="fab fa-facebook-f"></span></a>
+          <a href="#" title="더툴랩 네이버 블로그 페이지 바로가기"><span class="fa-sharp fas fa-n"></span></a>
+        </nav>
+        <nav class="fnb">
+          <ul>
+            <li><a href="#" title="서비스이용약관 바로가기">서비스이용약관</a></li>
+            <li><a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a></li>
+            <li><a href="#" title="사이트맵 바로가기">사이트맵</a></li>
+          </ul>
+        </nav>
+        <p>대표자명:백수경 주소:(04785) 서울특별시 성동구 뚝섬로17가길 48 (성수동2가) 성수에이원지식산업센터 1005호 사업자등록번호:560-81-01515 통신판매번호:제2019-서울성동-02042호 상호:주식회사 티티앨</p>
+        <a href="#" title="사업자 정보확인" class="ftc_btn">사업자정보확인</a>
+        <p>Copyright © 더툴랩 All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
