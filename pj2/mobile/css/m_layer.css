@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+html{
+  scroll-behavior: smooth;
+}
+/*헤더서식*/
+header{
+  width: 100%;
+  position: relative;
+  height: 106px;
+  z-index: 10000;
+  /*background-color: skyblue;*/
+}
+.top{
+  line-height: 60px; 
+  text-align: center;
+}
+.top > h1{
+  padding-bottom: 16px;
+}
+.top > h1 > a > img{
+  position: relative;
+  top: 21px;
+}
+.top > .h_weather{
+  position: absolute;
+  top: 18px;
+  left: 5%;
+  font-size: 0.7rem;
+}
+.w_text{
+  float: right;
+  line-height: 20px;
+}
+.m_search{
+  width: 90%;
+  height: 30px;
+  margin: 0px auto;
+  /*border: 2px solid #67BE7A;*/
+  border-radius: 20px;
+  position: relative;
+  border: 2px solid #67BE7A;
+}
+.m_search > input[type=text]{
+  width: 90%;
+  height: 24px;
+  border-radius: 20px;
+  border-style: none; 
+  outline: none;
+  position: absolute;
+  /*background-color: black;*/
+}
+.fa-search{
+  position: absolute;
+  color: #67BE7A;
+  top: 3px;
+  right: 4%;
+  font-size: 22px;
+}
+.menu{
+  position: absolute;
+  font-size: 2rem;
+  top: 18px;
+  right: 5%;
+}
+.close{
+  position: absolute;
+  font-size: 2rem;
+  left: 12%;
+  top: 16px;
+  display: block;
+  cursor: pointer;
+  padding: 15px;
+  /*background-color: skyblue;*/
+}
+
+.gnb{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100,100,100,0.8);
+  top: 0px;
+  left: 100%;
+  transition: 0.5s;
+  z-index: 100;
+}
+.gnb > ul{
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  float: right;
+  position: relative;
+}
+.gnb > ul > li:first-child {
+  text-align: center;
+}
+.gnb > ul > li:first-child a{
+  display: inline;
+}
+i.fas.fa-circle-user{
+  font-size: 120px;
+}
+.gnb > ul > li{
+  text-indent: 5%;
+  line-height: 25px;
+  padding-top: 30px;
+}
+.gnb > ul > li > a{
+  font-size: 17px;
+  display: block;
+}
+.gnb > ul > li > a > i{
+  color: #67BE7A;
+  font-size: 22px;
+}
+#toggle{
+  display: none;
+}
+#toggle:checked ~ .gnb{
+  left: 0px;
+}
+i.fa-circle-user{
+  font-size: 100px;
+}
+i.fa-close{
+  color: #fff;
+}
+i.fa-location-dot{
+  padding-right: 5%;
+}
+i.fa-music{
+  padding-right: 5%;
+}
+i.fa-gear{
+  padding-right: 5%;
+}
+i.fa-scroll{
+  padding-right: 5%;
+}
+i.fa-rectangle-list{
+  padding-right: 5%;
+}
+.fa-circle-arrow-up{
+  position: fixed;
+  font-size: 35px;
+  z-index: 30;
+  bottom: 100px;
+  right: 2%;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+article{
+    width:94%;
+    margin:30px auto;
+    background:#67BE7A;
+    border-radius:1.75em;
+    box-sizing:border-box;
+}
+article > h2{
+    font-size:24px;
+    color:#fff;
+    padding-bottom:1rem;
+}
+
+/*상단 내비게이션 서식*/
+.t_mnu_wrap{
+    height:80px;
+    background:#fff;
+    position:relative;
+}
+input[type=checkbox]{display:none;}
+h1{
+    text-align: center;
+    padding:10px;
+}
+h1 a{display:block;}
+h1 img{height:60px;}
+.t_mnu_wrap .fas:not(.gnb .fas){
+    position:absolute;
+    top:20px; 
+    font-size:40px;
+}
+.t_mnu_btn{cursor:pointer;
+}
+
+
+
+.fa-arrow-left{left:20px;}
+.fa-bars{right:20px; position: relative;}
+
+/*한강공원 선택 메뉴*/
+.r_box01{
+    padding:30px 20px 80px;
+}
+.m_river_list{
+    display:grid;
+    grid-template-columns:repeat(3,30.5%);
+    grid-template-rows:repeat(4,auto);
+    grid-gap:4%;
+}
+.m_river_list > li{
+    background-color: #fff;
+    text-align:center;
+    padding:5px;
+    border-radius:16px;
+}
+.m_river_list a{
+    font-size:1.13em;
+    line-height:1.56em;
+}
+.m_river_list > li > a > span[class*=r_li_icon]{
+    display:block;
+    margin:2% auto;
+    width:40px; height:40px;
+    background-size:40px;
+    text-align:center;
+    opacity:80%;
+}
+.m_river_list > li > a > .r_li_icon01{background-image:url('../img/icon_river01.png');}
+.m_river_list > li > a > .r_li_icon02{background-image:url('../img/icon_river02.png');}
+.m_river_list > li > a > .r_li_icon03{background-image:url('../img/icon_river03.png');}
+.m_river_list > li > a > .r_li_icon04{background-image:url('../img/icon_river04.png');}
+.m_river_list > li > a > .r_li_icon05{background-image:url('../img/icon_river05.png');}
+.m_river_list > li > a > .r_li_icon06{background-image:url('../img/icon_river06.png');}
+.m_river_list > li > a > .r_li_icon07{background-image:url('../img/icon_river07.png');}
+.m_river_list > li > a > .r_li_icon08{background-image:url('../img/icon_river08.png');}
+.m_river_list > li > a > .r_li_icon09{background-image:url('../img/icon_river09.png');}
+.m_river_list > li > a > .r_li_icon10{background-image:url('../img/icon_river10.png');}
+.m_river_list > li > a > .r_li_icon11{background-image:url('../img/icon_river11.png');}
+
+/*편의시설 선택 메뉴*/
+.r_box02{
+    padding:30px 20px;
+    margin-bottom:100px;
+}
+.m_convenient_list{
+    display:flex;
+    text-align:center;
+    justify-content:flex-start;
+    overflow:hidden;
+}
+.m_convenient_list > li{
+    margin:0 10px;
+}
+.m_convenient_list a{display:block;}
+
+@media screen and (max-width:900px) {
+    .m_convenient_list{
+        display:grid;
+        grid-template-columns:repeat(4, auto);
+        grid-template-rows:repeat(2, auto);
+        box-sizing:border-box;
+        justify-content:space-around;
+    }
+    .m_convenient_list > li{
+        margin:0.9em 0;
+    }
+}
+
+.circle{
+    width:80px; height:80px;
+    background:#fff;
+    color:#67BE7A;
+    border-radius:50%;
+    line-height:75px;
+    font-size:2rem;
+}
+.circle + span{
+    display:block;
+    font-weight:500;
+    color:#fff;
+    margin-top:15px;
+}

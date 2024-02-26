@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+main{ /*ㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎㅎㅎ*/
+    width: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+/* step3박스 */
+.step-box{ /*ㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎ*/
+    display: flex;
+    line-height: 23px;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top: 78px;
+
+}
+.title{
+    font-size: 0.75rem;
+}
+.step{
+    display: block;
+    width: 91px; height: 23px;
+    background-image: url('../img/sprite_login_join.png');
+    background-position: -276px -277px;
+    margin-left: 1.5%;
+}
+
+/* 웰컴 박스 */
+.welcome-box{
+    text-align: center;
+    margin-top: 91px;
+}
+.welcome{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h1{
+    margin: 13% auto;
+}
+h1 > span{display: none;}
+.main-logo{
+    width: 109px; height: 104px;
+    background-image: url('../img/sprite_login_join.png');
+    background-position: -2px -2px;
+}
+.main-logo + p{
+    line-height: 22px;
+    margin-bottom: 275px;
+}
+
+/* 다음페이지 버튼*/ /*ㅎㅎㅎㅎㅎㅎㅎㅎ공통ㅎㅎㅎㅎㅎㅎㅎㅎㅎ*/
+.next_btn{
+    display: block;
+    width: 100%; height: 70px;
+    border: 1px solid #67BE7A;
+    background-color: #67BE7A;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.25rem;
+    position: fixed; bottom: 0px;
+}

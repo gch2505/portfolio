@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한강술래_소셜로그인</title>
+
+    <!-- 1.여백초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 2.공통서식(메인/서브/로그인/회원가입) -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!-- 3.레이아웃 -->
+    <link href="./css/layout.css" rel="stylesheet" type="text/css">
+    <!-- 4.메인/서브/로그인/회원가입페이지 서식 -->
+    <link href="./css/login_sns.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <!-- 상단헤더영역 시작 -->
+    <header>
+        <div class="wrap">
+        <nav class="lnb">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+            <ul>
+            <li><a href="river.html" title="한강공원">한강공원</a>
+                <ul class="sub">
+                <li><a href="#" title="강서">강서</a></li>
+                <li><a href="#" title="광나루">광나루</a></li>
+                <li><a href="#" title="난지">난지</a></li>
+                <li><a href="river.html" title="뚝섬">뚝섬</a></li>
+                <li><a href="#" title="망원">망원</a></li>
+                <li><a href="#" title="반포">반포</a></li>
+                <li><a href="#" title="양화">양화</a></li>
+                <li><a href="#" title="여의도">여의도</a></li>
+                <li><a href="#" title="이촌">이촌</a></li>
+                <li><a href="#" title="잠실">잠실</a></li>
+                <li><a href="#" title="망원">잠원</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="편의시설">편의시설</a>
+                <ul class="sub">
+                <li><a href="convenient.html" title="체육">체육</a></li>
+                <li><a href="#" title="편의">편의</a></li>
+                <li><a href="#" title="문화">문화</a></li>
+                <li><a href="#" title="휴가/여행">휴가/여행</a></li>
+                <li><a href="#" title="수상이용시설">수상이용시설</a></li>
+                <li><a href="#" title="자연/학습시설">자연/학습시설</a></li>
+                <li><a href="#" title="공원접근시설">공원접근시설</a></li>
+                <li><a href="#" title="기타">기타</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="행사축제">행사/축제</a>
+                <ul class="sub">
+                <li><a href="#" title="전체보기">전체보기</a></li>
+                <li><a href="#" title="진행중">진행중</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="생태">생태정보</a>
+                <ul class="sub">
+                <li><a href="#" title="생태경관">생태경관 보전지역</a></li>
+                <li><a href="#" title="생태학습">생태학습 프로그램</a></li>
+                </ul>
+            </li>
+            <li><a href="#" title="리뷰">커뮤니티</a>
+            </li>
+            <li><a href="login_form.html" title="로그인">로그인</a></li>
+            <li><a href="join_step1.html" title="회원가입">회원가입</a></li>
+            <li><a href="#" title="search"><img src="img/search.png" alt="검색"></a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main>
+        <div class="login_middle">
+
+            <div class="login_title">
+                <h2>로그인</h2>
+            </div>
+
+            <div class="login_main">
+                <div class="login_tab">
+                    <a href="login_form.html" title="일반로그인" class="idlogin">ID 로그인</a>
+                    <a href="login_sns.html" title="소셜로그인" class="snslogin">SNS 로그인</a>
+
+                    <div class="login_a">
+                        <form name="로그인정보입력" method="post" action="받을서버주소">
+                            <div class="login_all">
+                                <ul>
+                                    <li><input type="button" value="KAKAO 로그인" class="login_btn kakao"></li>
+                                    <li><input type="button" value="NAVER 로그인" class="login_btn naver"></li>
+                                    <li><input type="button" value="GOOGLE 로그인" class="login_btn google"></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 푸터영역 시작 -->
+    <footer>
+        <div class="f_inner">
+            <h2 class="f_logo">
+                <img src="./img/logo2_white.png" alt="한강술래로고">
+            </h2>
+
+            <nav class="f_lnb">
+                <ul>
+                    <li><a href="#" title="이용약관 바로가기">이용약관</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#" title="이메일무단수집거부 바로가기">이메일무단수집거부</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#" title="홈페이지 이용안내 바로가기">홈페이지 이용안내</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#" title="고객센터 바로가기">고객센터</a></li>
+                </ul>
+            </nav>
+        
+            <address>
+                <ul class="add">
+                    <li>(주)한강술래</li>
+                    <li>&#124;</li>
+                    <li>대표자:강동호</li>
+                    <li>&#124;</li>
+                    <li>주소:서울특별시 종로구 관수동 20 국일관드림팰리스 2층</li>
+                </ul>
+                <ul class="call">
+                    <li>TEL: 02-123-4567</li>
+                    <li>&#124;</li>
+                    <li>E-MAIL: asd123@gmail.com</li>
+                </ul>
+                <p class="copy">COPYRIGHT &#9426; All Rights Reserved</p>
+            </address>
+        </div>
+        <a href="#" title="상단바로가기" class="t_btn">Top</a>
+    </footer>
+</body>
+</html>

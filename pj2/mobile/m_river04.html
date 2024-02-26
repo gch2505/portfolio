@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뚝섬한강공원 정보</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--1. 여백초기화-->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!--2. 공통서식-->
+    <link href="./css/common1.css" rel="stylesheet" type="text/css">
+    <!--3. 레이아웃-->
+    <link href="./css/m_layout1.css" rel="stylesheet" type="text/css">
+    <!--4. 서브페이지 서식-->
+    <link href="./css/m_river04.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/sublayer.css" type="text/css">
+    <!--5. 아이콘폰트 주소--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <!--상단헤더영역-->
+    <header>
+        <!--하단 내비게이션 서식-->
+        <nav class="f_tab_mnu">
+            <ul>
+                <li>
+                    <a href="riview.html" title="한강리뷰">
+                        <span class="fas fa-thumbs-up t_mnu_icon"></span><span>한강리뷰</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reservation.html" title="예약하기">
+                        <span class="fas fa-calendar-check t_mnu_icon"></span><span>예약하기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="m_index.html" title="홈">
+                        <span class="fas fa-home t_mnu_icon"></span><span>HOME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="playlist.html" title="플레이리스트">
+                        <span class="fas fa-music t_mnu_icon"></span><span>PLAYLIST</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mlogin.html" title="내 정보">
+                        <span class="fas fa-user-circle t_mnu_icon"></span><span>내 정보</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--메인콘텐츠영역-->
+    <main>
+        <div class="map_wrap">
+            <!--검색창-->
+            <div>            
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="t_mnu_btn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <nav class="gnb">
+                    <label for="toggle" class="close">
+                      <i class="fas fa-close"></i>
+                    </label>
+                    <ul>
+                      <li>
+                        <a href="mlogin.html" title="내정보" class="myin">
+                          <i class="fas fa-circle-user"></i></a>
+                          <p>Name</p>
+                      </li>
+                      <li><a href="m_river.html" title="한강공원"><i class="fas fa-location-dot"></i>한강공원</a></li>
+                      <li><a href="m_river.html" title="편의시설"><i class="fas fa-location-dot"></i>편의시설</a></li>
+                      <li><a href="#" title="행사축제"><i class="fas fa-location-dot"></i>행사/축제</a></li>
+                      <li><a href="#" title="생태"><i class="fas fa-location-dot"></i>생태</a></li>
+                      <li><a href="#" title="리뷰게시판"><i class="fas fa-rectangle-list"></i>리뷰게시판</a></li>
+                      <li><a href="#" title="플레이리스트"><i class="fas fa-music"></i>플레이리스트</a></li>
+                      <li><a href="#" title="공지사항"><i class="fas fa-scroll"></i>공지사항</a></li>
+                      <li><a href="#" title="설정"><i class="fas fa-gear"></i>설정</a></li>
+                    </ul>
+                </nav>
+                <a href="#" title="편의시설 검색 페이지로 이동" class="m_search"><span class="r_name">뚝섬한강공원</span></a>
+                <a href="#" title="검색어 지우기" class="m_back_btn"><span class="fas fa-close"></span></a>
+                <!--<a href="#" title="길찾기 페이지로 이동"><span class="fas fa-location-arrow"></span><span>길찾기</span></a>-->
+            </div>
+            <!--검색창 아래 버튼-->
+            <nav class="m_nav">
+                <input type="checkbox" id="select01">
+                <input type="checkbox" id="select02">
+                <input type="checkbox" id="select03">
+                <input type="checkbox" id="select04">
+                <input type="checkbox" id="select05">
+                <input type="checkbox" id="select06">
+                <input type="checkbox" id="select07">
+            <ul class="check_wrap">
+                <li class="check_li c_li1">
+                    <label for="select01">
+                        <span class="fas fa-subway"></span>
+                        <span>지하철</span>
+                    </label>
+                </li>
+                <li class="check_li c_li2">
+                    <label for="select02">
+                        <span class="fas fa-bicycle"></span>
+                        <span>자전거 대여점</span>
+                    </label>
+                </li>
+                <li class="check_li c_li3">
+                    <label for="select03">
+                        <span class="fas fa-car"></span>
+                        <span>주차장</span>
+                    </label>
+                </li>
+                <li class="check_li c_li4">
+                    <label for="select04">
+                        <span class="fas fa-restroom"></span>
+                        <span>화장실</span>
+                    </label>
+                </li>
+                <li class="check_li c_li5">
+                    <label for="select05">
+                        <span class="fas fa-tint"></span>
+                        <span>음수대</span>
+                    </label>
+                </li>
+                <li class="check_li c_li6">
+                    <label for="select06">
+                        <span class="fas fa-running"></span>
+                        <span>체육시설</span>
+                    </label>
+                </li>
+                <li class="check_li c_li7">
+                    <label for="select07">
+                        <span class="fas fa-info-circle"></span>
+                        <span>안내센터</span>
+                    </label>
+                </li>
+            </ul>
+            </nav>
+            <!--지도 위 버튼-->
+            <span class="fas fa-map-marker-alt"></span>
+            <input type="checkbox" id="map_pin">
+            <label for="map_pin" class="map_btn01">
+                <span class="fas fa-crosshairs"></span>
+            </label>
+            <input type="checkbox" id="map_plus">
+            <label for="map_plus" class="map_btn02">
+                <span class="fas fa-plus"></span>
+            </label>
+            <input type="checkbox" id="map_minus">
+            <label for="map_minus" class="map_btn03">
+                <span class="fas fa-minus"></span>
+            </label>
+        </div>
+        <!--공원정보서식-->
+        <article class="m_river04_info">
+            <h2>공원정보</h2>
+            <input type="checkbox" id="select_list1">
+            <label for="select_list1">
+                <span class="m_river_select">
+                    <span class="m_river_selected">
+                        <span class="r_river_select04">뚝섬한강공원</span>
+                        <span class="fas fa-angle-down"></span>
+                        <span class="fas fa-angle-up"></span>
+                    </span>
+                </span>
+            </label>
+            <ul>
+                <li class="m_river_option">강서한강공원</li>
+                <li class="m_river_option">광나루한강공원</li>
+                <li class="m_river_option">난지한강공원</li>
+                <li class="m_river_option select">뚝섬한강공원</li>
+                <li class="m_river_option">망원한강공원</li>
+                <li class="m_river_option">반포한강공원</li>
+                <li class="m_river_option">양화한강공원</li>
+                <li class="m_river_option">여의도한강공원</li>
+                <li class="m_river_option">이촌한강공원</li>
+                <li class="m_river_option">잠실한강공원</li>
+                <li class="m_river_option">잠원한강공원</li>
+            </ul>
+            <div class="m_map">
+                <img src="./img/map_img4-1.jpg" alt="뚝섬한강공원 지도">
+                <a href="#" title="자세히 보기"><span class="fas fa-magnifying-glass"></span></a>
+            </div>
+            <span>
+                한강공원이 조성되기 이전부터 강변유원지로 유명했던 곳입니다. 수상에서는 시원한 바람을 맞으며 낭만과 젊음을 만끽할 수 있는 윈드 서핑, 수상스키, 모터보트 등 수상스포츠가 활발하게 이루어지고 있습니다.
+            </span>
+        </article>
+        <article>
+            <h2>이 공원의 명소</h2>
+            <input type="radio" name="b_btn" id="b_btn01" checked>
+            <input type="radio" name="b_btn" id="b_btn02">
+            <div class="best_wrap">
+                <ul>
+                    <li>
+                        <a href="#" title="뚝섬한강수영장">
+                            <img src="./img/m_river04_best_img_4-1.jpg" alt="뚝섬한강수영장 이미지">
+                            <span>뚝섬한강수영장</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="뚝섬 음악분수">
+                            <img src="./img/m_river04_best_img_4-2.jpg" alt="뚝섬 음악분수 이미지">
+                            <span>뚝섬 음악분수</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="서울생각마당(뚝섬자벌레)">
+                            <img src="./img/m_river04_best_img_4-3.jpg" alt="서울생각마당(뚝섬자벌레) 이미지">
+                            <span>서울생각마당<br>(뚝섬자벌레)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="자연학습장(장미정원)">
+                            <img src="./img/m_river04_best_img_4-4.jpg" alt="자연학습장(장미정원) 이미지">
+                            <span>자연학습장<br>(장미정원)</span>
+                        </a>
+                    </li>
+                </ul>
+                <label for="b_btn01"><span class="fas fa-angle-left"></span></label>
+                <label for="b_btn02"><span class="fas fa-angle-right"></span></label>
+            </div>
+        </article>
+        <article class="m_river04_weather">
+            <h2>날씨</h2>
+            <input type="checkbox" id="select_list2">
+            <label for="select_list2">
+                <span class="m_river_select">
+                    <span class="m_river_selected">
+                        <span class="r_river_select04">뚝섬한강공원</span>
+                        <span class="fas fa-angle-down"></span>
+                        <span class="fas fa-angle-up"></span>
+                    </span>
+                </span>
+            </label>
+            <ul>
+                <li class="m_river_option">강서한강공원</li>
+                <li class="m_river_option">광나루한강공원</li>
+                <li class="m_river_option">난지한강공원</li>
+                <li class="m_river_option select">뚝섬한강공원</li>
+                <li class="m_river_option">망원한강공원</li>
+                <li class="m_river_option">반포한강공원</li>
+                <li class="m_river_option">양화한강공원</li>
+                <li class="m_river_option">여의도한강공원</li>
+                <li class="m_river_option">이촌한강공원</li>
+                <li class="m_river_option">잠실한강공원</li>
+                <li class="m_river_option">잠원한강공원</li>
+            </ul>
+            <div class="weather_4">
+                <div class="w_wrap">
+                    <h3>OO구 OO동</h3>
+                    <ul class="w_con">
+                        <li class="w_li01">
+                            <ul>
+                                <li><span class="fas fa-cloud-sun weather"></span></li>
+                                <li>
+                                    <div>
+                                        <span>10/24(화)</span>
+                                        <span>20&#x02DA;C</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w_li02">
+                            <ul>
+                                <li>
+                                    <span>오후 4시</span>
+                                    <span class="fas fa-cloud-sun"></span>
+                                    <span>21&#x02DA;</span>
+                                </li>
+                                <li>
+                                    <span>오후 5시</span>
+                                    <span class="fas fa-cloud"></span>
+                                    <span>20&#x02DA;</span>
+                                </li>
+                                <li>
+                                    <span>오후 6시</span>
+                                    <span class="fas fa-cloud-showers-heavy"></span>
+                                    <span>18&#x02DA;</span>
+                                </li>
+                                <li>
+                                    <span>오후 7시</span>
+                                    <span class="fas fa-cloud-showers-heavy"></span>
+                                    <span>17&#x02DA;</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="w_li03">
+                            <div>
+                                <span class="fas fa-smile"></span>
+                                <span>미세먼지</span>
+                                <span>좋음 28&#x338D;/m&#x00B3;</span>
+                            </div>
+                            <div>
+                                <span class="fas fa-smile"></span>
+                                <span>초미세먼지</span>
+                                <span>좋음 15&#x338D;/m&#x00B3;</span>
+                            </div>
+                        </li>
+                        <li class="w_li04">
+                            <div>
+                                <span class="fas fa-tint"></span><span>습도</span><span>45%</span>
+                            </div>
+                            <div>
+                                <span class="fas fa-wind"></span><span>바람</span><span>남서 2m/s</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w_bg">
+                </div>
+            </div>
+        </article>
+        <article class="m_review_4">
+            <h2>공원리뷰</h2>
+            <ul class="m_review_list04">
+                <li>
+                    <h3>1% 부족한 공원</h3>
+                    <p><span class="star">&#x2605;&#x2605;&#x2605;&#x2605;</span>&#x2605;</p>
+                    <p>정말 다 좋은데 뭔가 부족해요~</p>
+                </li>
+                <li>
+                    <h3>주말에 항상 들릅니다.</h3>
+                    <p><span class="star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></p>
+                    <p>혼자 산책하고 운동하기 좋아요~ </p>
+                </li>
+                <li>
+                    <h3>벌레 많음</h3>
+                    <p><span class="star">&#x2605;&#x2605;&#x2605;</span>&#x2605;&#x2605;</p>
+                    <p>날이 선선해서 그런건지 방역을 안 하는건지... 달리다가 입에 벌레 들어갈 뻔했네요</p>
+                </li>
+                <li>
+                    <h3>분수가 예뻐요</h3>
+                    <p><span class="star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></p>
+                    <p>밤에 가면 정말 보기 좋네요~</p>
+                </li>
+                <li>
+                    <h3>나쁘지 않습니다</h3>
+                    <p><span class="star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></p>
+                    <p>집 근처에 있어서 아이들 데리고 자주 오게 되네요.</p>
+                </li>
+            </ul>
+            <a href="#" title="공원 리뷰 페이지로 바로가기" class="s_btn">더보기</a>
+        </article>
+    </main>
+    <!--하단푸터영역-->
+    <footer></footer>
+</body>
+</html>

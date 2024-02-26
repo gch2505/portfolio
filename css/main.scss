@@ -499,7 +499,7 @@ section > h2{
   margin-right:70px;
 }
 .pr_inner2{
-  margin-top:-3%;
+  margin-top:-5.5%;
   width:800px;
 }
 h3::after{
@@ -532,10 +532,22 @@ dl dt{
   width:230px;
   font-weight: 400;
 }
-
+.hobby{
+  display:flex;
+  margin:20px 0;
+}
+.hobby div{
+  width:90px; height:100%;
+  margin-left:20px;
+}
+.hobby span{
+  display:block;
+  text-align: center;
+  line-height:24px;
+  padding-top:5px;
+}
 .hobby img{
-  margin:20px;
-  width:120px;
+  width:100%;
 }
 
 .skills ul{
@@ -690,7 +702,7 @@ dl dt{
 .pj_mockup .mockup_tablet > img{width:220px; position:absolute; z-index:999;}
 .pj_mockup .mockup_mobile > img{width:110px; position:absolute; z-index:999;}
 .pj_right{width:500px;margin:100px 0 0 80px; position:relative;}
-.pj_right > p{margin-bottom:50px;}
+.pj_right > p{margin-bottom:50px; line-height:28px;}
 .pj_right dl{font-size:18px;}
 .pj_right dl dt{width:120px;}
 .pj_right dl dd{width:350px;}
@@ -783,6 +795,34 @@ dl dt{
 }
 .g_photo:hover img{width:120%;}
 .g_photo:hover .g_black{opacity:1;}
+
+.modal{
+  width:100%; height:100%;
+  position:fixed;
+  top:0;left:0;
+  background:rgba(0,0,0,.7);
+  z-index:9999;
+}
+.modal .center{
+  height:70vh;
+  align-items:center;
+  text-align:center;
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+}
+.center img{
+  height:100%;
+}
+
+.modal .center .fas{
+  font-size:30px;
+  color:#fff;
+  position:absolute;
+  top:-6%; right:-6%;
+}
+
+
 
 
 //탑버튼 서식

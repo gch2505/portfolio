@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.wrap{
+    top: 0px;
+}
+main{
+    height: 2800px;
+}
+footer h2{
+    margin-bottom: 0px;
+}
+section{
+    position: relative;
+    top: 100px;
+}
+section, article{
+    width:1140px;
+    margin:0px auto;
+}
+section > h2{display:none;}
+
+h2{
+    margin-bottom:40px;
+    color:#67BE7A;
+}
+
+/* 상단 내비게이션 */
+.top_list > ul{
+    grid-template-columns:repeat(4,auto);
+}
+.top_list > ul > li:first-child{
+    background:#67BE7A;
+}
+.top_list > ul > li:first-child > a{
+    font-weight:500;
+    color:#fff;
+}
+
+.river_convienient{
+    position: relative;
+}
+/*제목 옆 버튼 서식*/
+#li_toggle{display: none;}
+.li_btn{
+    width:30px;
+    height:30px;
+    padding:8px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px; left:190px;
+}
+.li_btn img{
+    width:100%;
+}
+
+/*지도 서식*/
+.convienient_map{
+    width:1140px;
+    height:700px;
+    border-radius:15px;
+}
+
+.convienient_search{
+    padding: 50px 0px;
+}
+
+.convienient_list > ul{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:repeat(2,560px);
+    grid-template-rows:repeat(4,320px);
+}
+
+/*편의시설목록 서식*/
+.convienient_list > ul > li{
+    border:1px solid #dcdcdc;
+    border-radius:15px;
+    display:flex;
+}
+.c_img{
+    width:320px;
+    height:100%;
+    border-radius:15px;
+}
+.convienient_wrap{
+    width:240px;
+    border-radius:15px;
+    padding: 20px;
+    position: relative;
+}
+.convienient_wrap > a:first-of-type{
+    font-size:20px;
+    font-weight: 500;
+}
+.convienient_wrap > a > img{
+    width:15.62px;
+    height:20.83px;
+}
+.c_info{
+    margin-top:20px;
+}
+.c_info span{
+    line-height:30px;
+}
+.c_pin{
+    padding: 9px 12px;
+    border:1px solid #67BE7A;
+    background: #fff;
+    border-radius:40px;
+    position: absolute;
+    right:160px;
+    bottom:20px;
+}
+.pin_select{
+    background-color: #67BE7A;
+}
+.sub_btn01{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+}
+
+/*하단 페이지네이션*/
+.active a{
+    background-color: #67BE7A;
+    color:#fff;
+    font-weight: 500;
+}

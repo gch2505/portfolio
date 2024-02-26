@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+/*메인배너영역*/
+.mySwiper{
+  position: relative;
+}
+.slide{
+  width:100%;
+}
+.slide img{
+  width: 100%;
+}
+.slide h2{
+  display: none;
+}
+.swiper-pagination{
+  padding-bottom: 120px;
+}
+/*메인콘텐츠 공동서식*/
+.c1, .c2, .c3, .c4, .c5{
+  width: 100%;
+  height: 500px;
+}
+
+.c5{
+  background:linear-gradient(#fff, #B0E399);
+}
+h2{
+  font-size: 34px;
+  color: #67BE7A;
+  font-weight: 500;
+}
+.c1_wrap, .c2_wrap, .c3_wrap, .c4_wrap, .c5_wrap{
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/*콘텐츠1 영역*/
+.c1{
+  /*background-color: mediumseagreen;*/
+  height: 280px;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 2px 2px 2px 2px #e7e2e2;
+  position: relative;
+  top: -3px;
+}
+.c1 img{
+  width: 120px;
+  height: 120px;
+}
+.c1_wrap ul{
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  padding-top: 30px;
+}
+.c1_wrap ul > li > a > span{
+  display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+}
+
+
+/*콘텐츠2 영역*/
+.c2{
+height: 515px;
+}
+.fes{
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.box{
+  width: 300px;
+  height: 395px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #d6d2d2;
+  overflow: hidden;
+}
+.info h3{
+  padding: 10px 5px;
+  font-size: 16px;
+}
+.info p{
+  line-height: 30px;
+  padding: 0px 5px;
+}
+.c2_but{
+  margin-left: 6px;
+}
+.box img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.box img{
+  transform: scale(1.0);
+  transition: 0.3s;
+}
+.c2_wrap .all_but{
+    font-size: 16px;
+    float: right;
+    margin-top: -20px;
+}
+/*콘텐츠3 영역*/
+.c3{
+  height: 356px;
+}
+.pl{
+  width: 1140px;
+  display: flex;
+  justify-content: space-between; 
+  padding-top: 30px;
+}
+.c3_wrap img{
+  width: 50px;
+  height: 50px;
+  padding-top: 90px;
+}
+iframe{
+  border-radius: 10px;
+}
+
+/*콘텐츠4 영역*/
+.c4{
+  /*background-color: slateblue;*/
+  height: 470px;
+}
+.c4_wrap{
+  width: 1140px;
+  position: relative;
+}
+.rv{
+  width: 1140px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.rv img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.rv img{
+  position: relative; 
+  z-index: 10;
+}
+.rv01 > span{
+  position: absolute;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 300;
+  left: 26px;
+  top: 220px;
+  z-index: 100;
+}
+.rv_but{
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  left: 26px;
+  border: 3px solid #67BE7A;
+  border-radius: 25px;
+  display: block;
+  width: 135px;
+  height: 44px;
+  text-align: center;
+  top: 275px;
+  z-index: 100;
+}
+.rv_but > span{
+  line-height: 42px;
+}
+.rv_but:hover{
+  background-color: #67BE7A;
+  color: #fff;
+}
+.rv01{
+  width: 902px;
+  height: 340px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.rv02, .rv03{
+  width: 92px;
+  height: 340px;
+  position: relative;
+  color: #fff;
+  font-size: 34px;
+  font-weight: 300;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.rv02 span{
+  position: absolute;
+  left: 30.36px;
+  line-height: 45px;
+  top: 80px;
+  z-index: 100;
+}
+.rv03 span{
+  position: absolute;
+  left: 30.36px;
+  line-height: 45px;
+  top: 102.5px;
+  z-index: 100;
+}
+/*콘텐츠5 영역*/
+.c5{
+  height: 447px;
+}
+.c5 h2{
+  display: none;
+}
+.c5_wrap{ 
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.c5 img{
+    padding-left: 75px;
+    padding-top: 12px;
+}
+.weather{
+  width: 433px;
+  height: 387px;
+  background-color: #67BE7A;
+  border-radius: 10px;
+}
+.news{
+  width: 680px;
+  height: 387px;
+  border-radius: 10px;
+  background-color: #fdf6f6;
+}
+.weather h3{
+  font-size: 34px;
+  transform: translateX(16px);
+  padding-top: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+.news h3{
+  font-size: 34px;
+  padding: 16px 16px;
+  font-weight: 400;
+  color: #67BE7A;
+}
+.news ul > li{
+  line-height: 50px;
+  padding-left: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.news ul > li:last-child{
+  border: none;
+}
+.news ul > li > a:hover{
+  font-weight: bold;
+}

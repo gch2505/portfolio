@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한강술래 모바일 앱-로그인</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <!-- 1.여백초기화 -->
+        <link href="./css/reset.css" rel="stylesheet" type="text/css">
+        <!-- 2.공통서식(메인/서브/로그인/회원가입) -->
+        <link href="./css/common.css" rel="stylesheet" type="text/css">
+        <!-- 3.레이아웃 -->
+        <link href="./css/layout.css" rel="stylesheet" type="text/css">
+        <!-- 4.메인/서브/로그인/회원가입페이지 서식 -->
+        <link href="./css/mlogin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <main>
+        <div class="backimg">
+            <div class="logo-box">
+                <h1>메인로고</h1>
+                <h2>한강에서 술래잡기 '한강술래'</h2>
+            </div>
+
+            <div class="login-box">
+                <form name="로그인정보입력" method="post" action="받을서버주소">
+                        <div class="login_input">
+                            <input type="text" placeholder="아이디" class="idtext"><br>
+                            <input type="password" placeholder="비밀번호" class="pwtext"><br>
+                            <a href="m_index.html" class="login_btn">로그인</a>
+                        </div>
+                        <div class="login_more">
+                            <a href="#" title="아이디찾기">아이디 찾기 &#124;</a>
+                            <a href="#" title="비밀번호찾기">비밀번호 찾기</a>
+                            <a href="mjoin1.html" title="회원가입">회원가입</a>
+                        </div>
+                </form>
+            </div>
+
+            <div class="snslogin-box">
+                <span class="linebar">간편하게 로그인</span>
+                <div class="snslogo">
+                    <a href="#" class="login_n"></a>
+                    <a href="#" class="login_k"></a>
+                    <a href="#" class="login_g"></a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

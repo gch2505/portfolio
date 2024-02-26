@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인페이지</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/m_layer.css" type="text/css">
+  <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/m_layout.css" type="text/css">
+  <link rel="stylesheet" href="css/m_main.css" type="text/css">
+  <link rel="stylesheet" href="css/swiper.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="script/swiper.js"></script>
+</head>
+<body>
+  <!--헤더영역-->
+  <header>
+    <div class="top">
+      <h1><a href="m_index.html" title="메인페이지 이동"><img src="img/logo.png" alt="상단로고"></a></h1>
+      <div class="h_weather">
+        <img src="img/sunny.png" alt="써니">     
+        <div class="w_text">
+          <p class="w01">오늘의 날씨</p>
+          <p class="w02">20.3C</p>
+        </div>
+      </div>
+    </div>
+    <div class="m_search">
+      <input type="text" placeholder="검색어를 입력해주세요." maxlength="15">
+      <a href="#" title="검색"><i class="fas fa-search"></i></a>
+    </div>  
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="menu">
+      <i class="fas fa-bars"></i>
+    </label>
+    <nav class="gnb">
+        <label for="toggle" class="close">
+          <i class="fas fa-close"></i>
+        </label>
+        <ul>
+          <li>
+            <a href="mlogin.html" title="내정보" class="myin">
+              <i class="fas fa-circle-user"></i></a>
+              <p>Name</p>
+          </li>
+          <li><a href="m_river.html" title="한강공원"><i class="fas fa-location-dot"></i>한강공원</a></li>
+          <li><a href="#" title="편의시설"><i class="fas fa-location-dot"></i>편의시설</a></li>
+          <li><a href="#" title="행사축제"><i class="fas fa-location-dot"></i>행사/축제</a></li>
+          <li><a href="#" title="생태"><i class="fas fa-location-dot"></i>생태</a></li>
+          <li><a href="#" title="리뷰게시판"><i class="fas fa-rectangle-list"></i>리뷰게시판</a></li>
+          <li><a href="#" title="플레이리스트"><i class="fas fa-music"></i>플레이리스트</a></li>
+          <li><a href="#" title="공지사항"><i class="fas fa-scroll"></i>공지사항</a></li>
+          <li><a href="#" title="설정"><i class="fas fa-gear"></i>설정</a></li>
+        </ul>
+    </nav>
+
+    <!--네비하단-->
+    <nav class="f_tab_mnu">
+      <ul>
+          <li>
+              <a href="riview.html" title="한강리뷰">
+                  <span class="fas fa-thumbs-up t_mnu_icon"></span><span>한강리뷰</span>
+              </a>
+          </li>
+          <li>
+              <a href="reservation.html" title="예약하기">
+                  <span class="fas fa-calendar-check t_mnu_icon"></span><span>예약하기</span>
+              </a>
+          </li>
+          <li>
+              <a href="m_index.html" title="홈">
+                  <span class="fas fa-home t_mnu_icon"></span><span>HOME</span>
+              </a>
+          </li>
+          <li>
+              <a href="playlist.html" title="플레이리스트">
+                  <span class="fas fa-music t_mnu_icon"></span><span>PLAYLIST</span>
+              </a>
+          </li>
+          <li>
+              <a href="mypage.html" title="내 정보">
+                  <span class="fas fa-user-circle t_mnu_icon"></span><span>내 정보</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+  </header>
+
+  <!--메인영역-->
+  <main>
+    <article class="slide">
+      <h2>메인슬라이드</h2>
+      <div class="swiper mySwiper banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" title="배너1"><img src="img/banner.png" alt="배너1"></a>
+              <p>한강풍경</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="배너2"><img src="img/banner2.png" alt="배너2"></a>
+              <p>한강풍경</p>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" title="배너3"><img src="img/banner3.png" alt="배너3"></a>
+              <p>한강풍경</p>
+            </div>
+          </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </article>
+
+    <article class="c1">
+      <div class="c1_wrap"> 
+        <h2>한강시설</h2>
+        <ul>
+          <li>
+            <a href="m_river.html" title="공원페이지 바로가기"><img src="img/h_but1.png" alt="공원이미지"><span>공원</span></a>
+          </li>
+          <li>
+            <a href="#" title="체육페이지 바로가기"><img src="img/h_but2.png" alt="체육이미지"><span>체육</span></a>
+          </li>
+          <li>
+            <a href="#" title="편의페이지 바로가기"><img src="img/h_but3.png" alt="편의이미지"><span>편의</span></a>
+          </li>
+          <li>
+            <a href="#" title="문화페이지 바로가기"><img src="img/h_but4.png" alt="문화이미지"><span>문화</span></a>
+          </li>
+          <li>
+            <a href="#" title="휴양페이지 바로가기"><img src="img/h_but5.png" alt="휴양이미지"><span>휴양</span></a>
+          </li>
+          <li>
+            <a href="#" title="안내페이지 바로가기"><img src="img/h_but6.png" alt="안내이미지"><span>안내</span></a>
+          </li>
+        </ul>
+      </div>
+  </article>
+
+  <article class="c2">
+    <h2>행사정보</h2>
+    <div class="swiper mySwiper festi">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="f_box">            
+              <a href="#" title="배너1"><img src="img/mc2_img1.png" alt="배너1"></a>
+              <div class="cap">
+              <p>
+                행사 : 노을명소 스탬프투어 한강 술래길 온라인 챌린지
+              </p>
+              <p>장소 : 반포, 이촌한강공원</p>
+              <p>기간 : 2023.10.13(금)~10.22.(일)</p>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="f_box">            
+              <a href="#" title="배너1"><img src="img/mc2_img2.png" alt="배너1"></a>
+              <div class="cap">
+              <p>
+                행사 :2023 차 없는 잠수교 뚜벅뚜벅 축제 
+              </p>
+              <p>장소 : 잠수교 30~31 경간, 달빛광장 일대</p>
+              <p>기간 : 2023-09-03(일) ~ 2023-11-12(일)</p>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="f_box">            
+              <a href="#" title="배너1"><img src="img/mc2_img3.png" alt="배너1"></a>
+              <div class="cap">
+              <p>
+                행사 : 2023 책 읽는 한강공원 10월 행사
+              </p>
+              <p>장소 : 여의도(멀티플라자)·뚝섬한강공원(자벌레 앞 잔디광장)</p>
+              <p>기간 : 2023. 9. 2.(토)~10.28.(토)</p>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="f_box">            
+              <a href="#" title="배너1"><img src="img/mc2_img4.png" alt="배너1"></a>
+              <div class="cap">
+              <p>
+                행사 : 광진교8번가 11월 행사
+              </p>
+              <p>장소 : 광진교 8번째 교각 하부</p>
+              <p>기간 : 2023-11-01(수) ~ 2023-11-30(목)</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <a href="#" title="행사 더보기">
+      <i class="fas fa-plus"></i>
+    </a>
+  </article>
+
+  <article class="c3">
+    <h2>예약하기</h2>
+    <div class="rv">
+      <div class="c3r_01">
+        <a href="#" title="체육시설"><img src="img/reserv01.jpg" alt="체육시설이미지"></a>
+        <p>한강 체육시설</p>
+      </div>
+        <div class="c3r_02">
+          <a href="#" title="요트">
+            <img src="img/reserv02.jpg" alt="요트이미지">
+          </a>
+          <p>요트투어</p>
+        </div>
+        <div class="c3r_03">
+          <a href="#" title="크루즈"><img src="img/reserv03.jpg" alt="크루즈이미지"></a>
+          <p>크루즈</p>
+      </div>
+      </div>
+  </article>
+
+  <article class="c4">
+    <h2>추천 플레이리스트</h2>
+    <div class="pl">
+      <div class="hp">
+        <a href="https://www.youtube.com/embed/UW5mgZBl9G8?si=u5m3Ie7lWVm51DT3" title="플리1"><img src="img/playlist01.jpg" alt="플레이리스트"></a>
+        <p>플레이리스트</p>
+      </div>
+      <div class="hp">
+        <a href="https://www.youtube.com/embed/Yn-NIBfI8u0?si=C7iboc_XGZpADv0t" title="플리2"><img src="img/playlist02.jpg" alt="플레이리스트2"></a>
+        <p>플레이리스트</p>
+      </div>
+      <div class="hp">
+        <a href="#" title="플리3"><img src="img/playlist03.jpg" alt="플레이리스트3"></a>
+        <p>플레이리스트</p>
+      </div>
+      </div>
+  </article>
+
+  <article class="c5">
+    <h2>한강소식</h2>
+    <ul>
+      <li>
+        <a href="#" title="소식1">2023년 한강공원 그늘막 설치 허용구역 운영 종료 안내('23.11.~'24.3.)</a>
+      </li>
+      <li>
+        <a href="#" title="소식2">한강페스티벌 가을축제 개막! 가을 한강을 누리세요~(2023.10.13.~22.)</a>
+      </li>
+      <li>
+        <a href="#" title="소식3">한강 역사 정규탐방과 한강야경투어 가을 특별프로그램 참여자 모집</a>
+      </li>
+      <li>
+        <a href="#" title="소식3">한강 모래사장 '해변쉼터'에서 무더위 식히세요~ (2023.8.12.~9.10.)</a>
+      </li>
+      <li>
+        <a href="#" title="소식5">한강페스티벌 여름축제 개막! 올여름 피서는 한강에서!(2023.8.4.~8.20.)</a>
+      </li>
+      <li>
+        <a href="#" title="소식6">[인증샷이벤트] 한강사진 올리고 수달 굿즈 받으세요!(~2023.6.5.(월)까지)</a>
+      </li>
+    </ul>
+    <a href="#" title="소식 더보기">
+      <i class="fas fa-plus"></i>
+    </a>
+  </article>
+
+  <article class="c6">
+    <h2>하이</h2>
+    <div class="c6_we">
+      <h3>오늘의 날씨</h3>
+      <div class="c6_01">
+        <i class="fas fa-smile"></i>
+        <p>미세먼지</p>
+        <p>좋음 28&#x338D;/m&#x00B3;</p>
+      </div>
+      <div class="c6_02">
+        <i class="fas fa-sun"></i>
+        <p>맑음</p>
+        <p>20.3&#x02DA;C</p>
+      </div>
+      <div class="c6_03">
+        <i class="fas fa-smile"></i>
+        <p>초미세먼지</p>
+        <p>좋음 15&#x338D;/m&#x00B3;</p>
+      </div>
+    </div>
+  </article>
+
+  
+  </main>
+
+  <!--푸터영역-->
+  <footer>
+    <a href="#" title="탑버튼"><i class="fas fa-circle-arrow-up"></i></a>
+  </footer>
+  <script src="script/swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper.banner", {
+        spaceBetween:0,
+        effect:"fade",
+        centerSlide:true,
+        autoplay:{
+          delay:2500,
+          disableOnInteraction:false,
+        },
+        pagination:{
+          el:".swiper-pagination",
+          clickable:true,
+        }
+      });
+    </script>
+        <script>
+          var swiper = new Swiper(".mySwiper.festi", {
+            spaceBetween:0,
+            effect:"fade",
+            centerSlide:true,
+            autoplay:{
+              delay:2500,
+              disableOnInteraction:false,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }
+          });
+        </script>
+</body>
+</html>
