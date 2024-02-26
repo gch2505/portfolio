@@ -9,7 +9,7 @@ $subColor:#90190E;
 }
 
 
-header{width:100%; height:100vh;}
+header{width:100%;}
 main{display:none;}
 h2, h3{
   font-family:"Concert One", "SOYOMapleBoldTTF";
@@ -467,11 +467,11 @@ h3{font-size:40px;}
 
 section:nth-child(2n){
   height:100vh;
-  background:$bgColor01;
+  background:$bgColor02;
 }
 section:nth-child(2n-1){
   height:100vh;
-  background:$bgColor02;
+  background:$bgColor01;
 }
 section > h2{
   font-size:60px;
